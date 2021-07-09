@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Sports Massage Learning App</string>
+
+    <string name="vid_desc">Video Description</string>
+    <string name="massage_tutorial_1">Effluerage</string>
+    <string name="massage_tutorial_2">Massage Tutorial 2</string>
+    <string name="desc">Description</string>
+    <string name="settings">Settings</string>
+    <string name="subtext_settings">Application Configuration</string>
+
+    <string name="lang">Language</string>
+    <string name="subtext_lang">Language Configuration</string>
+    <string name="about">About</string>
+    <string name="subtext_about">About Application</string>
+    <string name="theory">Theory</string>
+</resources>

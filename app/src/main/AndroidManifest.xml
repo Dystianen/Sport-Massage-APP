@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.project_ibu_ayu_v2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projectibuayuv2">
+        <activity android:name=".Theory2"></activity>
+        <activity android:name=".Theory1" />
+        <activity android:name=".Video11" />
+        <activity android:name=".Video10" />
+        <activity android:name=".Video9" />
+        <activity android:name=".Video8" />
+        <activity android:name=".Video7" />
+        <activity android:name=".Video6" />
+        <activity android:name=".VideoMenu" />
+        <activity android:name=".TheoryMenu" />
+        <activity android:name=".Video5" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".About" />
+        <activity android:name=".Video3" />
+        <activity android:name=".Video4" />
+        <activity android:name=".Video2" />
+        <activity android:name=".Video1" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

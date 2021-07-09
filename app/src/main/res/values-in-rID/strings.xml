@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Project-ibu-ayu-v2</string>
+
+    <string name="vid_desc">Deskripsi Video</string>
+    <string name="massage_tutorial_1">Effluerage</string>
+    <string name="massage_tutorial_2">Tutorial Massage 2</string>
+    <string name="desc">Deskripsi</string>
+    <string name="settings">Pengaturan</string>
+    <string name="subtext_settings">Konfigurasikan Aplikasi Anda</string>
+
+    <string name="lang">Bahasa</string>
+    <string name="subtext_lang">Pengaturan Bahasa</string>
+    <string name="about">Tentang</string>
+    <string name="subtext_about">Tentang Aplikasi</string>
+    <string name="theory">Teori</string>
+</resources>
