@@ -15,4 +15,5 @@
         tools:ignore="MissingContraints" >
 
     </VideoView>
+
 </RelativeLayout>

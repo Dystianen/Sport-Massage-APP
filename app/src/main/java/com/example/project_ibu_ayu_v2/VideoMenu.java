@@ -16,7 +16,7 @@ public class VideoMenu extends AppCompatActivity implements View.OnClickListener
 
         //defining Cards
         video1Card = (CardView) findViewById(R.id.video1_card);
-        video2Card = (CardView) findViewById(R.id.video2_card);
+//        video2Card = (CardView) findViewById(R.id.video2_card);
         video3Card = (CardView) findViewById(R.id.video3_card);
         video4Card = (CardView) findViewById(R.id.video4_card);
         video5Card = (CardView) findViewById(R.id.video5_card);
@@ -24,13 +24,11 @@ public class VideoMenu extends AppCompatActivity implements View.OnClickListener
         video7Card = (CardView) findViewById(R.id.video7_card);
         video8Card = (CardView) findViewById(R.id.video8_card);
         video9Card = (CardView) findViewById(R.id.video9_card);
-        video10Card = (CardView) findViewById(R.id.video10_card);
-        video11Card = (CardView) findViewById(R.id.video11_card);
 
 
         //add Click listener to the cards
         video1Card.setOnClickListener(this);
-        video2Card.setOnClickListener(this);
+//        video2Card.setOnClickListener(this);
         video3Card.setOnClickListener(this);
         video4Card.setOnClickListener(this);
         video5Card.setOnClickListener(this);
@@ -38,8 +36,6 @@ public class VideoMenu extends AppCompatActivity implements View.OnClickListener
         video7Card.setOnClickListener(this);
         video8Card.setOnClickListener(this);
         video9Card.setOnClickListener(this);
-        video10Card.setOnClickListener(this);
-        video11Card.setOnClickListener(this);
     }
 
     @Override
@@ -74,12 +70,6 @@ public class VideoMenu extends AppCompatActivity implements View.OnClickListener
                 break;
             case R.id.video9_card:
                 i = new Intent(this, Video9.class);startActivity(i);
-                break;
-            case R.id.video10_card:
-                i = new Intent(this, Video10.class);startActivity(i);
-                break;
-            case R.id.video11_card:
-                i = new Intent(this, Video11.class);startActivity(i);
                 break;
             default:break ;
         }

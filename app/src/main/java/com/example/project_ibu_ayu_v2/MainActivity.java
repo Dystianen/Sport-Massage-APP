@@ -1,9 +1,5 @@
 package com.example.project_ibu_ayu_v2;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -11,7 +7,18 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.LinearLayout;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+
+import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
+import com.smarteist.autoimageslider.SliderAnimations;
+import com.smarteist.autoimageslider.SliderView;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
@@ -36,6 +43,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         videoCard.setOnClickListener(this);
         languageCard.setOnClickListener(this);
         aboutCard.setOnClickListener(this);
+
+        SliderView sliderView = findViewById(R.id.imageSlider);
+        List<Integer> images= new ArrayList<>();
+        images.add(R.drawable.banner);
+        images.add(R.drawable.effleurage);
+        images.add(R.drawable.effleurage);
+        images.add(R.drawable.effleurage);
+
+        myAdapter MyAdapter = new myAdapter(images);
+        sliderView.setSliderAdapter(MyAdapter);
+        sliderView.setAutoCycle(true);
+        sliderView.setSliderTransformAnimation(SliderAnimations.ZOOMOUTTRANSFORMATION);
     }
 
     @Override

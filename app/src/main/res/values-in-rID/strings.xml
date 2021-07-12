@@ -2,10 +2,8 @@
 <resources>
     <string name="app_name">Project-ibu-ayu-v2</string>
 
-    <string name="vid_desc">Deskripsi Video</string>
-    <string name="massage_tutorial_1">Effluerage</string>
-    <string name="massage_tutorial_2">Tutorial Massage 2</string>
-    <string name="desc">Deskripsi</string>
+    <string name="video">Video</string>
+    <string name="subtext_video">Video Pijat Olahraga</string>
     <string name="settings">Pengaturan</string>
     <string name="subtext_settings">Konfigurasikan Aplikasi Anda</string>
 
@@ -14,4 +12,29 @@
     <string name="about">Tentang</string>
     <string name="subtext_about">Tentang Aplikasi</string>
     <string name="theory">Teori</string>
+    <string name="subtext_theory">Teori Pijat Olahraga</string>
+    <string name="navvideo">Teknik Pijat Olahraga</string>
+    <string name="navteori">Teori Pijat Olahraga</string>
+
+    <!--Introduction-->
+    <string name="pengantar">Pengantar</string>
+    <string name="subtext_pengantar">Pengantar Teknik Pijat</string>
+
+    <!--Definition-->
+    <string name="definisi">Definisi</string>
+
+    <!--History-->
+    <string name="histori">Sejarah</string>
+
+    <!--Fisiologi-->
+    <string name="fisiologi">Fisiologi</string>
+
+    <!--Anatomy-->
+    <string name="anatomi">Anatomi</string>
+
+    <!--Rice Method-->
+    <string name="method">Metode Rice</string>
+
+    <!--Ethics-->
+    <string name="etika">Etika</string>
 </resources>

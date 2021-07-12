@@ -1,16 +1,49 @@
 <resources>
     <string name="app_name">Sports Massage Learning App</string>
 
-    <string name="vid_desc">Video Description</string>
-    <string name="massage_tutorial_1">Effluerage</string>
-    <string name="massage_tutorial_2">Massage Tutorial 2</string>
-    <string name="desc">Description</string>
+    <!--Video-->
+    <string name="video">Videos</string>
+    <string name="subtext_video">Videos Sport Massage</string>
+
+    <!--Setting-->
     <string name="settings">Settings</string>
     <string name="subtext_settings">Application Configuration</string>
 
+    <!--Language-->
     <string name="lang">Language</string>
     <string name="subtext_lang">Language Configuration</string>
+
+    <!--About-->
     <string name="about">About</string>
     <string name="subtext_about">About Application</string>
+
+    <!--Theory-->
     <string name="theory">Theory</string>
+    <string name="subtext_theory">Theory Sport Massage</string>
+
+    <!--Navigasi Video Menu-->
+    <string name="navvideo">Technique Sport Massage</string>
+    <string name="navteori">Theory Sport Massage</string>
+
+    <!--Introduction-->
+    <string name="pengantar">Introduction</string>
+    <string name="subtext_pengantar">Introduction Sports Massage</string>
+
+    <!--Definition-->
+    <string name="definisi">Definition</string>
+
+    <!--History-->
+    <string name="histori">History</string>
+
+    <!--Fisiologi-->
+    <string name="fisiologi">Physiology</string>
+
+    <!--Anatomy-->
+    <string name="anatomi">Anatomy</string>
+
+    <!--Rice Method-->
+    <string name="method">Rice Method</string>
+
+    <!--Ethics-->
+    <string name="etika">Ethics</string>
 </resources>
