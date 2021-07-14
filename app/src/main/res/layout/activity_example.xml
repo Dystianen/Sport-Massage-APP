@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#FCFCFC"
-    android:foreground="?android:selectableItemBackground">
+    android:layout_height="match_parent">
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbar"
         android:layout_width="match_parent"
@@ -27,10 +24,9 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Sport Message Learning"
-                android:textColor="@color/grays"
+                android:text="Sport Massage Learning"
                 android:textStyle="bold"
-                android:textSize="20sp"
+                android:textSize="20dp"
                 android:padding="10dp"
                 android:layout_marginLeft="-60dp"
                 android:textAlignment="center">
@@ -39,492 +35,173 @@
         </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.core.widget.NestedScrollView
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="20dp">
+
+        <com.smarteist.autoimageslider.SliderView
+            android:id="@+id/imageSlider"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:sliderAnimationDuration="1000"
+            app:sliderIndicatorSelectedColor="@color/lightgray"
+            app:sliderIndicatorUnselectedColor="@color/white"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        android:rowCount="2"
+        android:padding="10dp"
+        android:columnCount="2">
 
-        <LinearLayout
-            android:id="@+id/ll"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:radius="50dp">
-
+        <androidx.cardview.widget.CardView
+            android:id="@+id/theory_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="8dp"
+            >
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clipToPadding="false"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_gravity="center_vertical|center_horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cerclebackgroundyello"
+                    android:src="@drawable/bookmark"/>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pengantar"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"/>
 
             </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/video_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="8dp"
+            >
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clipToPadding="false"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_gravity="center_vertical|center_horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cerclebackgroundyello"
+                    android:src="@drawable/ic_round_play_arrow_24"/>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/video"
+                    android:textStyle="bold"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"/>
 
             </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/language_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="8dp"
+            >
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clipToPadding="false"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_gravity="center_vertical|center_horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cerclebackgroundyello"
+                    android:src="@drawable/ic_baseline_language_24"/>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lang"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
 
             </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/about_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="20dp"
+            android:elevation="8dp"
+            >
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clipToPadding="false"
+                android:orientation="vertical"
                 android:gravity="center"
-                android:orientation="horizontal">
+                android:layout_gravity="center_vertical|center_horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/cerclebackgroundyello"
+                    android:src="@drawable/ic_baseline_info_24"/>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Introduction"
+                    android:textStyle="bold"
+                    android:textAlignment="center"/>
 
             </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clipToPadding="false"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:clipToPadding="false"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/video1_card"
-                    android:layout_width="160dp"
-                    android:layout_height="130dp"
-                    android:layout_margin="10dp"
-                    android:clickable="true"
-                    app:cardCornerRadius="10dp"
-                    android:foreground="?android:attr/selectableItemBackground">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:background="@drawable/petrisage"
-                            android:padding="10dp">
-
-                        </ImageView>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="10dp"
-                            android:text="Petrissage"
-                            android:textColor="@color/black"
-                            android:textStyle="bold">
-
-                        </TextView>
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-    </androidx.core.widget.NestedScrollView>
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</LinearLayout>

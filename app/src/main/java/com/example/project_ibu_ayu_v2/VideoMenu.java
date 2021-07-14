@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class VideoMenu extends AppCompatActivity implements View.OnClickListener {
-    private CardView video1Card,video2Card,video3Card,video4Card,video5Card,video6Card,video7Card,video8Card,video9Card,video10Card,video11Card;
+    private CardView video1Card,video2Card,video3Card,video4Card,video5Card,video6Card,video7Card,video8Card,video9Card;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,7 +16,7 @@ public class VideoMenu extends AppCompatActivity implements View.OnClickListener
 
         //defining Cards
         video1Card = (CardView) findViewById(R.id.video1_card);
-//        video2Card = (CardView) findViewById(R.id.video2_card);
+        video2Card = (CardView) findViewById(R.id.video2_card);
         video3Card = (CardView) findViewById(R.id.video3_card);
         video4Card = (CardView) findViewById(R.id.video4_card);
         video5Card = (CardView) findViewById(R.id.video5_card);
@@ -28,7 +28,7 @@ public class VideoMenu extends AppCompatActivity implements View.OnClickListener
 
         //add Click listener to the cards
         video1Card.setOnClickListener(this);
-//        video2Card.setOnClickListener(this);
+        video2Card.setOnClickListener(this);
         video3Card.setOnClickListener(this);
         video4Card.setOnClickListener(this);
         video5Card.setOnClickListener(this);

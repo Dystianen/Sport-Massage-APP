@@ -51,8 +51,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         images.add(R.drawable.effleurage);
         images.add(R.drawable.effleurage);
 
-        myAdapter MyAdapter = new myAdapter(images);
-        sliderView.setSliderAdapter(MyAdapter);
+        MyAdapter myAdapter = new MyAdapter(images);
+        sliderView.setSliderAdapter(myAdapter);
         sliderView.setAutoCycle(true);
         sliderView.setSliderTransformAnimation(SliderAnimations.ZOOMOUTTRANSFORMATION);
     }

@@ -9,10 +9,10 @@ import com.smarteist.autoimageslider.SliderViewAdapter;
 
 import java.util.List;
 
-public class myAdapter extends SliderViewAdapter<myAdapter.MyViewHolder> {
+public class MyAdapter extends SliderViewAdapter<MyAdapter.MyViewHolder> {
     List<Integer> imageList;
 
-    myAdapter(List<Integer> list){
+    MyAdapter(List<Integer> list){
         this.imageList=list;
     }
     @Override
