@@ -11,7 +11,7 @@
         android:id="@+id/appbar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:theme="@style/Theme.Projectibuayuv2">
+        android:background="@drawable/gradientnav">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,7 +44,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/theory1_card"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_row="0"
             android:layout_gravity="fill"
             android:layout_rowWeight="1"
@@ -63,14 +63,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/cerclebackgroundyello"
+                    android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_baseline_text_snippet_24"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
+                    android:padding="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -95,7 +94,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/theory2_card"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_row="1"
             android:layout_gravity="fill"
             android:layout_rowWeight="1"
@@ -114,14 +113,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/cerclebackgroundyello"
-                    android:src="@drawable/ic_baseline_history_24"/>
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_baseline_text_snippet_24"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
+                    android:padding="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -146,7 +144,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_row="2"
             android:layout_gravity="fill"
             android:layout_rowWeight="1"
@@ -165,14 +163,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/cerclebackgroundyello"
+                    android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_baseline_text_snippet_24"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
+                    android:padding="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -196,7 +193,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_row="3"
             android:layout_gravity="fill"
             android:layout_rowWeight="1"
@@ -215,14 +212,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/cerclebackgroundyello"
+                    android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_baseline_text_snippet_24"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
+                    android:padding="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -246,7 +242,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_row="4"
             android:layout_gravity="fill"
             android:layout_rowWeight="1"
@@ -265,14 +261,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/cerclebackgroundyello"
+                    android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_baseline_text_snippet_24"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
+                    android:padding="10dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -296,7 +291,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_row="5"
             android:layout_gravity="fill"
             android:layout_rowWeight="1"
@@ -315,14 +310,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:layout_marginLeft="20dp"
-                    android:background="@drawable/cerclebackgroundyello"
+                    android:layout_marginLeft="10dp"
                     android:src="@drawable/ic_baseline_text_snippet_24"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="10dp"
+                    android:padding="10dp"
                     android:orientation="vertical">
 
                     <TextView

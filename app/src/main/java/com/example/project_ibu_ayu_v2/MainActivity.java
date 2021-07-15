@@ -47,9 +47,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         SliderView sliderView = findViewById(R.id.imageSlider);
         List<Integer> images= new ArrayList<>();
         images.add(R.drawable.banner);
-        images.add(R.drawable.effleurage);
-        images.add(R.drawable.effleurage);
-        images.add(R.drawable.effleurage);
+        images.add(R.drawable.materialdesign);
+        images.add(R.drawable.materialdesign2);
 
         MyAdapter myAdapter = new MyAdapter(images);
         sliderView.setSliderAdapter(myAdapter);
