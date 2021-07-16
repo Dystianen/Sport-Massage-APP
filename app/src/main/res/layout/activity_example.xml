@@ -66,8 +66,8 @@
                 android:layout_gravity="center_vertical|center_horizontal"
                 >
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:background="@drawable/petrisage"
                     android:padding="5dp"
                     android:src="@drawable/ic_baseline_bookmark_24"/>
@@ -84,7 +84,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/video_card"
+            android:id="@+id/theory_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
@@ -104,15 +104,16 @@
                 android:layout_gravity="center_vertical|center_horizontal"
                 >
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/cerclebackgroundyello"
-                    android:src="@drawable/ic_round_play_arrow_24"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/petrisage"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_bookmark_24"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/video"
+                    android:text="@string/pengantar"
                     android:textStyle="bold"
                     android:paddingTop="10dp"
                     android:textAlignment="center"/>
@@ -121,10 +122,10 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/language_card"
+            android:id="@+id/theory_card"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="1"
+            android:layout_row="0"
             android:layout_column="0"
             android:layout_gravity="fill"
             android:layout_rowWeight="1"
@@ -141,15 +142,16 @@
                 android:layout_gravity="center_vertical|center_horizontal"
                 >
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/cerclebackgroundyello"
-                    android:src="@drawable/ic_baseline_language_24"/>
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/petrisage"
+                    android:padding="5dp"
+                    android:src="@drawable/ic_baseline_bookmark_24"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/lang"
+                    android:text="@string/pengantar"
                     android:textStyle="bold"
                     android:paddingTop="10dp"
                     android:textAlignment="center"/>
