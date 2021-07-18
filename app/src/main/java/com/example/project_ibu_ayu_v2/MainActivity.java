@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private CardView theoryCard,videoCard,languageCard,aboutCard;
+    private CardView theoryCard,videoCard,segmentCard,languageCard,aboutCard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,26 +34,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //defining Cards
         theoryCard = (CardView) findViewById(R.id.theory_card);
         videoCard = (CardView) findViewById(R.id.video_card);
+        segmentCard = (CardView) findViewById(R.id.segment_card);
         languageCard = (CardView) findViewById(R.id.language_card) ;
         aboutCard = (CardView) findViewById(R.id.about_card);
 
 
         //add Click listener to the cards
         theoryCard.setOnClickListener(this);
+        segmentCard.setOnClickListener(this);
         videoCard.setOnClickListener(this);
         languageCard.setOnClickListener(this);
         aboutCard.setOnClickListener(this);
 
         SliderView sliderView = findViewById(R.id.imageSlider);
         List<Integer> images= new ArrayList<>();
-        images.add(R.drawable.banner);
-        images.add(R.drawable.materialdesign);
         images.add(R.drawable.materialdesign2);
+        images.add(R.drawable.definisi);
+        images.add(R.drawable.sejarah);
+        images.add(R.drawable.etika_1);
+        images.add(R.drawable.anatomi);
+        images.add(R.drawable.fisiologi);
+        images.add(R.drawable.metode_rice);
 
         MyAdapter myAdapter = new MyAdapter(images);
         sliderView.setSliderAdapter(myAdapter);
-        sliderView.setAutoCycle(true);
-        sliderView.setSliderTransformAnimation(SliderAnimations.ZOOMOUTTRANSFORMATION);
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM); //set indicator animation by using IndicatorAnimationType. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
+        sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
+        sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
+        sliderView.setScrollTimeInSec(3); //set scroll delay in seconds :
+        sliderView.startAutoCycle();
     }
 
     @Override
@@ -63,6 +72,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.theory_card:
                 i = new Intent(this, TheoryMenu.class);startActivity(i);
+                break;
+            case R.id.segment_card:
+                i = new Intent(this, VideoButton.class);startActivity(i);
                 break;
             case R.id.video_card:
                 i = new Intent(this, VideoMenu.class);startActivity(i);

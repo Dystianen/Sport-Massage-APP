@@ -3,8 +3,10 @@
     <string name="app_name">Pijat Olahraga</string>
 
 <!--    video-->
-    <string name="video">Video</string>
-    <string name="subtext_video">Video Pijat Olahraga</string>
+    <string name="teknik">Teknik Massage</string>
+
+<!--    segement-->
+    <string name="segment">Segmen Massage</string>
 
 <!--    setting-->
     <string name="settings">Pengaturan</string>
@@ -31,6 +33,9 @@
 <!--    Introduction-->
     <string name="pengantar">Pengantar</string>
     <string name="subtext_pengantar">Pengantar Teknik Pijat</string>
+
+<!--    Profile-->
+    <string name="profil">Profil</string>
 
 <!--    Definition-->
     <string name="definisi">Definisi</string>

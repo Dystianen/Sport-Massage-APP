@@ -7,15 +7,20 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="false"
         android:icon="@drawable/icons2"
         android:label="@string/app_name"
-        android:hardwareAccelerated="false"
         android:largeHeap="true"
         android:roundIcon="@drawable/cerclebackgroundyello"
         android:supportsRtl="true"
         android:theme="@style/Theme.Projectibuayuv2">
-        <activity android:name=".Theory2"></activity>
-        <activity android:name=".Theory1" />
+        <activity android:name=".Profil" />
+        <activity android:name=".Definisi" />
+        <activity android:name=".Sejarah" />
+        <activity android:name=".Etika" />
+        <activity android:name=".Anatomi" />
+        <activity android:name=".Fisiologi" />
+        <activity android:name=".Metode" />
         <activity android:name=".Video11" />
         <activity android:name=".Video10" />
         <activity android:name=".Video9" />
@@ -23,6 +28,9 @@
         <activity android:name=".Video7" />
         <activity android:name=".Video6" />
         <activity android:name=".VideoMenu" />
+        <activity android:name=".VideoButton" />
+        <activity android:name=".Button1" />
+        <activity android:name=".Button2" />
         <activity android:name=".TheoryMenu" />
         <activity android:name=".Video5" />
         <activity android:name=".MainActivity" />

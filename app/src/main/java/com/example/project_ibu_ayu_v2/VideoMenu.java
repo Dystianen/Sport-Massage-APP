@@ -3,6 +3,7 @@ package com.example.project_ibu_ayu_v2;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -38,6 +39,7 @@ public class VideoMenu extends AppCompatActivity implements View.OnClickListener
         video9Card.setOnClickListener(this);
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
 

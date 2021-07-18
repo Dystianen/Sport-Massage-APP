@@ -1,101 +1,117 @@
 <resources>
     <string name="app_name">Sports Massage</string>
 
-<!--    Video-->
-    <string name="video">Videos</string>
-    <string name="subtext_video">Videos Sport Massage</string>
+    <!--    Video-->
+    <string name="teknik">Technique Massage</string>
 
-<!--    Setting-->
+<!--    segement-->
+    <string name="segment">Segment Massage</string>
+
+    <!--    Setting-->
     <string name="settings">Settings</string>
     <string name="subtext_settings">Application Configuration</string>
 
-<!--    Language-->
+    <!--    Language-->
     <string name="lang">Language</string>
     <string name="subtext_lang">Language Configuration</string>
 
-<!--    About-->
+    <!--    About-->
     <string name="about">About</string>
     <string name="subtext_about">About Application</string>
 
-<!--    Theory-->
+    <!--    Theory-->
     <string name="theory">Theory</string>
     <string name="subtext_theory">Theory</string>
 
-<!--    Navigasi Video Menu-->
+    <!--    Navigasi Video Menu-->
     <string name="navvideo">Technique</string>
     <string name="navteori">Theory Sport Massage</string>
 
-<!--    Introduction-->
+    <!--    Introduction-->
     <string name="pengantar">Introduction</string>
     <string name="subtext_pengantar">Introduction Sports Massage</string>
 
-<!--    Definition-->
+    <!--    Profile-->
+    <string name="profil">Profile</string>
+
+    <!--    Definition-->
     <string name="definisi">Definition</string>
 
-<!--    History-->
+    <!--    History-->
     <string name="histori">History</string>
 
-<!--    Fisiologi-->
+    <!--    Fisiologi-->
     <string name="fisiologi">Physiology</string>
 
-<!--    Anatomy-->
+    <!--    Anatomy-->
     <string name="anatomi">Anatomy</string>
 
-<!--    Rice Method-->
+    <!--    Rice Method-->
     <string name="method">Rice Method</string>
 
-<!--    Ethics-->
+    <!--    Ethics-->
     <string name="etika">Ethics</string>
 
 
-<!--    MASSAGE SEGMENT-->
+    <!--    MASSAGE SEGMENT-->
     <string name="segmen">Segmen Massage</string>
 
-<!--    PRONE PART-->
+    <!--    PRONE PART-->
     <string name="terkurap">PRONE PART</string>
 
-<!--    neck-->
+    <!--    neck-->
     <string name="leher">Neck</string>
 
-<!--    Shoulder-->
+    <!--    Shoulder-->
     <string name="bahu">Shoulder</string>
 
-<!--    Punggung & Pinggang-->
+    <!--    Punggung & Pinggang-->
     <string name="punggung">Back &amp; waits</string>
 
-<!--    Buttocks-->
+    <!--    Buttocks-->
     <string name="bokong">Buttocks</string>
 
-<!--    Back Thigh-->
+    <!--    Back Thigh-->
     <string name="paha">Back Thigh</string>
 
-<!--    Calves Back-->
+    <!--    Calves Back-->
     <string name="betis">Calves Back</string>
 
-<!--    Soles of the feet-->
+    <!--    Soles of the feet-->
     <string name="kaki">Sales of the feet</string>
 
-<!--    SUPINE PART-->
+    <!--    SUPINE PART-->
     <string name="terlentang">SUPINE PART</string>
 
-<!--    Chest-->
+    <!--    Chest-->
     <string name="dada">Chest</string>
 
-<!--    Stomach-->
+    <!--    Stomach-->
     <string name="perut">Stomach</string>
 
-<!--    Front Thigh-->
+    <!--    Front Thigh-->
     <string name="pahaDepan">Front Thigh</string>
 
-<!--    Front Calf-->
+    <!--    Front Calf-->
     <string name="betisDepan">Front Calf</string>
 
-<!--    Instep-->
+    <!--    Instep-->
     <string name="punggungKaki">Instep</string>
 
-<!--    Arms-->
+    <!--    Arms-->
     <string name="lengan">Arms</string>
 
-<!--    Head-->
+    <!--    Head-->
     <string name="kepala">Head</string>
+    <string name="title_activity_main3">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>

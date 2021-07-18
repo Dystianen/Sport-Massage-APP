@@ -8,19 +8,29 @@ import android.os.Bundle;
 import android.view.View;
 
 public class TheoryMenu extends AppCompatActivity implements View.OnClickListener {
-    private CardView theory1Card, theory2Card;
+    private CardView profil, definisi, sejarah, etika, anatomi, fisiologi, metode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_theory_menu);
 
-        theory1Card = (CardView) findViewById(R.id.theory1_card);
-        theory2Card = (CardView) findViewById(R.id.theory2_card);
+        profil = (CardView) findViewById(R.id.profile_card);
+        definisi = (CardView) findViewById(R.id.definition_card);
+        sejarah = (CardView) findViewById(R.id.history_card);
+        etika = (CardView) findViewById(R.id.ethics_card);
+        anatomi = (CardView) findViewById(R.id.anatomy_card);
+        fisiologi = (CardView) findViewById(R.id.physiology_card);
+        metode = (CardView) findViewById(R.id.method_card);
 
         //add Click listener to the cards
-        theory1Card.setOnClickListener(this);
-        theory2Card.setOnClickListener(this);
+        profil.setOnClickListener(this);
+        definisi.setOnClickListener(this);
+        sejarah.setOnClickListener(this);
+        etika.setOnClickListener(this);
+        anatomi.setOnClickListener(this);
+        fisiologi.setOnClickListener(this);
+        metode.setOnClickListener(this);
     }
 
     @Override
@@ -28,11 +38,26 @@ public class TheoryMenu extends AppCompatActivity implements View.OnClickListene
         Intent i ;
 
         switch (v.getId()) {
-            case R.id.theory1_card:
-                i = new Intent(this, Theory1.class);startActivity(i);
+            case R.id.profile_card:
+                i = new Intent(this, Profil.class);startActivity(i);
                 break;
-            case R.id.theory2_card:
-                i = new Intent(this, Theory2.class);startActivity(i);
+            case R.id.definition_card:
+                i = new Intent(this, Definisi.class);startActivity(i);
+                break;
+            case R.id.history_card:
+                i = new Intent(this, Sejarah.class);startActivity(i);
+                break;
+            case R.id.ethics_card:
+                i = new Intent(this, Etika.class);startActivity(i);
+                break;
+            case R.id.anatomy_card:
+                i = new Intent(this, Anatomi.class);startActivity(i);
+                break;
+            case R.id.physiology_card:
+                i = new Intent(this, Fisiologi.class);startActivity(i);
+                break;
+            case R.id.method_card:
+                i = new Intent(this, Metode.class);startActivity(i);
                 break;
             default:break ;
         }
