@@ -28,9 +28,29 @@
         <activity android:name=".Video7" />
         <activity android:name=".Video6" />
         <activity android:name=".VideoMenu" />
+<!--        segment menu bagian terlentang-->
         <activity android:name=".VideoButton" />
         <activity android:name=".Button1" />
         <activity android:name=".Button2" />
+        <activity android:name=".Segment" />
+        <activity android:name=".Leher" />
+        <activity android:name=".Bahu" />
+        <activity android:name=".PunggungPinggang" />
+        <activity android:name=".Bokong" />
+        <activity android:name=".PahaBelakang" />
+        <activity android:name=".BetisBelakang" />
+        <activity android:name=".TelapakKaki" />
+
+<!--        segment menu bagian terlentang-->
+        <activity android:name=".SegmentTerlentang" />
+        <activity android:name=".Dada" />
+        <activity android:name=".Perut" />
+        <activity android:name=".PahaDepan" />
+        <activity android:name=".BetisDepan" />
+        <activity android:name=".PunggungKaki" />
+        <activity android:name=".Lengan" />
+        <activity android:name=".Kepala" />
+
         <activity android:name=".TheoryMenu" />
         <activity android:name=".Video5" />
         <activity android:name=".MainActivity" />

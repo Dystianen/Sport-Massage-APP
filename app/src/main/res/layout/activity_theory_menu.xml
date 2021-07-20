@@ -33,7 +33,6 @@
         </LinearLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -192,7 +191,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/ethics_card"
+            android:id="@+id/ethics1_card"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_row="5"
@@ -225,7 +224,57 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/etika"
+                        android:text="@string/etika1"
+                        android:textStyle="bold"
+                        android:textSize="17dp"
+                        android:textAlignment="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:paddingTop="5dp"
+                        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ethics2_card"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_row="5"
+            android:layout_gravity="fill"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="8dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_baseline_text_snippet_24"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/etika2"
                         android:textStyle="bold"
                         android:textSize="17dp"
                         android:textAlignment="center"/>

@@ -49,7 +49,223 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/effleurage"
+                        android:background="@drawable/leher"
+                        android:padding="10dp">
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/segment2_card"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:focusable="true"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="30dp"
+                        android:text="@string/bahu">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bahu"
+                        android:padding="10dp">
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/segment3_card"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:focusable="true"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="30dp"
+                        android:text="@string/punggung">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pinggang"
+                        android:padding="10dp">
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/segment4_card"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:focusable="true"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="30dp"
+                        android:text="@string/bokong">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bokong"
+                        android:padding="10dp">
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/segment5_card"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:focusable="true"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="30dp"
+                        android:text="@string/paha">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/pahabelakang"
+                        android:padding="10dp">
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/segment6_card"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:focusable="true"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="30dp"
+                        android:text="@string/betis">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/betisbelakang"
+                        android:padding="10dp">
+
+                    </ImageView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/segment7_card"
+                android:layout_width="160dp"
+                android:layout_height="130dp"
+                android:layout_margin="10dp"
+                android:clickable="true"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:focusable="true"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_height="30dp"
+                        android:text="@string/kaki">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/telapak"
                         android:padding="10dp">
 
                     </ImageView>

@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //defining Cards
         theoryCard = (CardView) findViewById(R.id.theory_card);
-        videoCard = (CardView) findViewById(R.id.video_card);
+//        videoCard = (CardView) findViewById(R.id.video_card);
         segmentCard = (CardView) findViewById(R.id.segment_card);
         languageCard = (CardView) findViewById(R.id.language_card) ;
         aboutCard = (CardView) findViewById(R.id.about_card);
@@ -42,26 +42,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //add Click listener to the cards
         theoryCard.setOnClickListener(this);
         segmentCard.setOnClickListener(this);
-        videoCard.setOnClickListener(this);
+//        videoCard.setOnClickListener(this);
         languageCard.setOnClickListener(this);
         aboutCard.setOnClickListener(this);
 
         SliderView sliderView = findViewById(R.id.imageSlider);
         List<Integer> images= new ArrayList<>();
-        images.add(R.drawable.materialdesign2);
-        images.add(R.drawable.definisi);
-        images.add(R.drawable.sejarah);
-        images.add(R.drawable.etika_1);
         images.add(R.drawable.anatomi);
-        images.add(R.drawable.fisiologi);
-        images.add(R.drawable.metode_rice);
+        images.add(R.drawable.image1);
+        images.add(R.drawable.image2);
+        images.add(R.drawable.image3);
+        images.add(R.drawable.image4);
+        images.add(R.drawable.image5);
+        images.add(R.drawable.image6);
 
         MyAdapter myAdapter = new MyAdapter(images);
         sliderView.setSliderAdapter(myAdapter);
-        sliderView.setIndicatorAnimation(IndicatorAnimationType.WORM); //set indicator animation by using IndicatorAnimationType. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
+        sliderView.setIndicatorAnimation(IndicatorAnimationType.THIN_WORM); //set indicator animation by using IndicatorAnimationType. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
         sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
         sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
-        sliderView.setScrollTimeInSec(3); //set scroll delay in seconds :
+        sliderView.setScrollTimeInSec(3); //set scroll delay in seconds
         sliderView.startAutoCycle();
     }
 
@@ -76,9 +76,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.segment_card:
                 i = new Intent(this, VideoButton.class);startActivity(i);
                 break;
-            case R.id.video_card:
-                i = new Intent(this, VideoMenu.class);startActivity(i);
-                break;
+//            case R.id.video_card:
+//                i = new Intent(this, VideoMenu.class);startActivity(i);
+//                break;
             case R.id.language_card:
                 showLanguageDialog();
                 break;

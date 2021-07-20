@@ -1,11 +1,14 @@
 <resources>
     <string name="app_name">Sports Massage</string>
 
-    <!--    Video-->
+<!--    Video-->
     <string name="teknik">Technique Massage</string>
 
+<!--    Teknik-->
+    <string name="teknik1">TECHNIQUE</string>
+
 <!--    segement-->
-    <string name="segment">Segment Massage</string>
+    <string name="segment">Masssage</string>
 
     <!--    Setting-->
     <string name="settings">Settings</string>
@@ -50,7 +53,10 @@
     <string name="method">Rice Method</string>
 
     <!--    Ethics-->
-    <string name="etika">Ethics</string>
+    <string name="etika1">Ethics 1</string>
+
+    <!--    Ethics-->
+    <string name="etika2">Ethics 2</string>
 
 
     <!--    MASSAGE SEGMENT-->

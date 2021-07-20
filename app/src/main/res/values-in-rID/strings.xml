@@ -5,8 +5,10 @@
 <!--    video-->
     <string name="teknik">Teknik Massage</string>
 
+<!--    Teknik-->
+    <string name="teknik1">TEKNIK</string>
 <!--    segement-->
-    <string name="segment">Segmen Massage</string>
+    <string name="segment">Massage</string>
 
 <!--    setting-->
     <string name="settings">Pengaturan</string>
@@ -53,7 +55,10 @@
     <string name="method">Metode Rice</string>
 
 <!--    Ethics-->
-    <string name="etika">Etika</string>
+    <string name="etika1">Etika 1</string>
+
+    <!--    Ethics-->
+    <string name="etika2">Etika 2</string>
 
 <!--    segmen-->
     <string name="segmen">SEGMEN MASSAGE</string>
