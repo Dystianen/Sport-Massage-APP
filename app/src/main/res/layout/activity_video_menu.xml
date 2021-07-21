@@ -130,7 +130,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/video5_card"
+                android:id="@+id/video6_card"
                 android:layout_width="160dp"
                 android:layout_height="130dp"
                 android:layout_margin="10dp"
@@ -274,7 +274,7 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/video6_card"
+                android:id="@+id/video5_card"
                 android:layout_width="160dp"
                 android:layout_height="130dp"
                 android:layout_margin="10dp"

@@ -48,18 +48,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         SliderView sliderView = findViewById(R.id.imageSlider);
         List<Integer> images= new ArrayList<>();
-        images.add(R.drawable.anatomi);
-        images.add(R.drawable.image1);
-        images.add(R.drawable.image2);
-        images.add(R.drawable.image3);
-        images.add(R.drawable.image4);
-        images.add(R.drawable.image5);
-        images.add(R.drawable.image6);
+        images.add(R.drawable.massage1);
+        images.add(R.drawable.massage2);
+        images.add(R.drawable.massage3);
+        images.add(R.drawable.massage4);
+        images.add(R.drawable.massage5);
+        images.add(R.drawable.massage6);
+        images.add(R.drawable.massage7);
+        images.add(R.drawable.massage8);
 
         MyAdapter myAdapter = new MyAdapter(images);
         sliderView.setSliderAdapter(myAdapter);
         sliderView.setIndicatorAnimation(IndicatorAnimationType.THIN_WORM); //set indicator animation by using IndicatorAnimationType. :WORM or THIN_WORM or COLOR or DROP or FILL or NONE or SCALE or SCALE_DOWN or SLIDE and SWAP!!
-        sliderView.setSliderTransformAnimation(SliderAnimations.SIMPLETRANSFORMATION);
+        sliderView.setSliderTransformAnimation(SliderAnimations.ZOOMOUTTRANSFORMATION);
         sliderView.setAutoCycleDirection(SliderView.AUTO_CYCLE_DIRECTION_BACK_AND_FORTH);
         sliderView.setScrollTimeInSec(3); //set scroll delay in seconds
         sliderView.startAutoCycle();

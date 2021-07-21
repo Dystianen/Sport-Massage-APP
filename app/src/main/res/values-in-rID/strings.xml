@@ -110,4 +110,7 @@
 
 <!--    kepala-->
     <string name="kepala">Kepala</string>
+
+<!--    closing-->
+    <string name="penutup">Penutup</string>
 </resources>

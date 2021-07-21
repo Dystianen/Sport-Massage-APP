@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class TheoryMenu extends AppCompatActivity implements View.OnClickListener {
-    private CardView profil, definisi, sejarah, etika1, etika2, anatomi, fisiologi, metode;
+    private CardView profil, definisi, sejarah, etika1, etika2, anatomi, fisiologi, metode, closing;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,7 @@ public class TheoryMenu extends AppCompatActivity implements View.OnClickListene
         anatomi = (CardView) findViewById(R.id.anatomy_card);
         fisiologi = (CardView) findViewById(R.id.physiology_card);
         metode = (CardView) findViewById(R.id.method_card);
+        closing = (CardView) findViewById(R.id.closing_card);
 
         //add Click listener to the cards
         profil.setOnClickListener(this);
@@ -33,6 +34,7 @@ public class TheoryMenu extends AppCompatActivity implements View.OnClickListene
         anatomi.setOnClickListener(this);
         fisiologi.setOnClickListener(this);
         metode.setOnClickListener(this);
+        closing.setOnClickListener(this);
     }
 
     @Override
@@ -63,6 +65,9 @@ public class TheoryMenu extends AppCompatActivity implements View.OnClickListene
                 break;
             case R.id.method_card:
                 i = new Intent(this, Metode.class);startActivity(i);
+                break;
+            case R.id.closing_card:
+                i = new Intent(this, Closing.class);startActivity(i);
                 break;
             default:break ;
         }

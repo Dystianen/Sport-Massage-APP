@@ -23,7 +23,7 @@
                 android:layout_margin="10dp"
                 app:cardCornerRadius="20dp"
                 android:layout_row="0"
-                app:cardBackgroundColor="@color/yello">
+                app:cardBackgroundColor="#f6a6ff">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -43,7 +43,7 @@
                 android:layout_margin="10dp"
                 app:cardCornerRadius="20dp"
                 android:layout_row="1"
-                app:cardBackgroundColor="@color/yello">
+                app:cardBackgroundColor="#f6a6ff">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -63,7 +63,7 @@
                 android:layout_margin="10dp"
                 app:cardCornerRadius="20dp"
                 android:layout_row="1"
-                app:cardBackgroundColor="@color/yello">
+                app:cardBackgroundColor="#f6a6ff">
 
                 <TextView
                     android:layout_width="match_parent"

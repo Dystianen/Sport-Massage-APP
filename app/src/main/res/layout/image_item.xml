@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="270dp"
         android:scaleType="fitXY"
         tools:srcCompat="@tools:sample/avatars" />
 </LinearLayout>

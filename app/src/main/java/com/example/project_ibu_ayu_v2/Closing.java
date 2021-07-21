@@ -5,12 +5,12 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Profil extends AppCompatActivity {
+public class Closing extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_profil);
+        setContentView(R.layout.activity_closing);
         ImageView imageView = findViewById(R.id.theory);
     }
 }

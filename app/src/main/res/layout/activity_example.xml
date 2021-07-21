@@ -15,333 +15,397 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:columnCount="2"
-            android:rowCount="7"
+            android:columnCount="1"
+            android:rowCount="8"
             android:alignmentMode="alignMargins"
             android:columnOrderPreserved="false"
             android:padding="14dp">
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/video3_card"
-                android:layout_width="160dp"
-                android:layout_height="130dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
+                android:id="@+id/profile_card"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
                 android:layout_row="0"
-                android:layout_column="0"
-                android:focusable="true"
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:gravity="center_vertical"
-                        android:layout_height="30dp"
-                        android:text="Effleurage">
-
-                    </TextView>
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/effleurage"
-                        android:padding="10dp">
-
-                    </ImageView>
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/video1_card"
-                android:layout_width="160dp"
-                android:layout_height="130dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:layout_row="0"
-                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
                 app:cardCornerRadius="10dp"
-                android:focusable="true">
-
+                android:elevation="8dp"
+                >
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
-                        android:text="Petrissage">
-
-                    </TextView>
-
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    >
                     <ImageView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_text_snippet_24"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/petrisage"
-                        android:padding="10dp">
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
 
-                    </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/profil"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:textAlignment="center"/>
 
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/video2_card"
-                android:layout_width="160dp"
-                android:layout_height="130dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
+                android:id="@+id/definition_card"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
                 android:layout_row="1"
-                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
                 app:cardCornerRadius="10dp"
-                android:focusable="true">
-
+                android:elevation="8dp"
+                >
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
-                        android:text="Shaking">
-
-                    </TextView>
-
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    >
                     <ImageView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_text_snippet_24"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/shaking"
-                        android:padding="10dp">
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
 
-                    </ImageView>
-
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/definisi"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/video5_card"
-                android:layout_width="160dp"
-                android:layout_height="130dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:layout_row="1"
-                android:layout_column="1"
-                app:cardCornerRadius="10dp"
-                android:focusable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
-                        android:text="Friction">
-
-                    </TextView>
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/friction"
-                        android:padding="10dp">
-
-                    </ImageView>
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/video4_card"
-                android:layout_width="160dp"
-                android:layout_height="130dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
+                android:id="@+id/history_card"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
                 android:layout_row="2"
-                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
                 app:cardCornerRadius="10dp"
-                android:focusable="true">
-
+                android:elevation="8dp"
+                >
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
-                        android:text="Tapotement">
-
-                    </TextView>
-
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    >
                     <ImageView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_text_snippet_24"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/tapotemen"
-                        android:padding="10dp">
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
 
-                    </ImageView>
-
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/histori"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/video9_card"
-                android:layout_width="160dp"
-                android:layout_height="130dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:layout_row="2"
-                android:layout_column="1"
-                app:cardCornerRadius="10dp"
-                android:focusable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
-                        android:text="Walken">
-
-                    </TextView>
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/walken"
-                        android:padding="10dp">
-
-                    </ImageView>
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/video7_card"
-                android:layout_width="160dp"
-                android:layout_height="130dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
+                android:id="@+id/ethics1_card"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
                 android:layout_row="3"
-                android:layout_column="1"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
                 app:cardCornerRadius="10dp"
-                android:focusable="true">
-
+                android:elevation="8dp"
+                >
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
-                        android:text="Skin Rolling">
-
-                    </TextView>
-
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    >
                     <ImageView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_text_snippet_24"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/skinrolling"
-                        android:padding="10dp">
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
 
-                    </ImageView>
-
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/etika1"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/video6_card"
-                android:layout_width="160dp"
-                android:layout_height="130dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
-                android:layout_row="3"
-                android:layout_column="0"
-                app:cardCornerRadius="10dp"
-                android:focusable="true">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
-                        android:text="Vibration">
-
-                    </TextView>
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/vibration"
-                        android:padding="10dp">
-
-                    </ImageView>
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/video8_card"
-                android:layout_width="160dp"
-                android:layout_height="130dp"
-                android:layout_margin="10dp"
-                android:clickable="true"
+                android:id="@+id/ethics2_card"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
                 android:layout_row="4"
-                android:layout_column="0"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
                 app:cardCornerRadius="10dp"
-                android:focusable="true">
-
+                android:elevation="8dp"
+                >
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="30dp"
-                        android:gravity="center_vertical"
-                        android:text="Stroking">
-
-                    </TextView>
-
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    >
                     <ImageView
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_text_snippet_24"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/stroking"
-                        android:padding="10dp">
+                        android:padding="10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
 
-                    </ImageView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/etika2"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/anatomy_card"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_row="5"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="8dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_text_snippet_24"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/anatomi"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/physiology_card"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_row="6"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="8dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_text_snippet_24"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fisiologi"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/method_card"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_row="7"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="8dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_text_snippet_24"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/method"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/closing_card"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_row="8"
+                android:layout_gravity="fill"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="8dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_vertical"
+                    >
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_baseline_text_snippet_24"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/penutup"
+                            android:textStyle="bold"
+                            android:textSize="17dp"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </GridLayout>
