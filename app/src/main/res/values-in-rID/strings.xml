@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Pijat Olahraga</string>
+    <string name="app_name">Sport Massage</string>
 
 <!--    video-->
     <string name="teknik">Teknik Massage</string>

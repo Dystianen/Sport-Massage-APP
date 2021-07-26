@@ -87,7 +87,7 @@
                 >
                 <ImageView
                     android:layout_width="60dp"
-                    android:layout_height="50dp"
+                    android:layout_height="60dp"
                     android:background="@drawable/cerclebackgroundyello"
                     android:src="@drawable/ic_baseline_bookmark_24"/>
 
@@ -124,7 +124,7 @@
                 >
                 <ImageView
                     android:layout_width="60dp"
-                    android:layout_height="50dp"
+                    android:layout_height="60dp"
                     android:background="@drawable/cerclebackgroundyello"
                     android:src="@drawable/ic_round_play_arrow_24"/>
 
@@ -161,7 +161,7 @@
                 >
                 <ImageView
                     android:layout_width="60dp"
-                    android:layout_height="50dp"
+                    android:layout_height="60dp"
                     android:background="@drawable/cerclebackgroundyello"
                     android:src="@drawable/ic_baseline_language_24"/>
 
@@ -198,7 +198,7 @@
                 >
                 <ImageView
                     android:layout_width="60dp"
-                    android:layout_height="50dp"
+                    android:layout_height="60dp"
                     android:background="@drawable/cerclebackgroundyello"
                     android:src="@drawable/ic_baseline_info_24"/>
 
