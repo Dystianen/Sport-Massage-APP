@@ -3,11 +3,31 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable-v21/ic_menu_camera.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable-v21/ic_menu_gallery.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable-v21/ic_menu_slideshow.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable-v24/cerclebackgroundgreen.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable-v24/cerclebackgroundpink.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable-v24/cerclebackgroundpurple.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable-v24/cerclebackgroundyello.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable/backgrounddark.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable/backgroundwhite.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable/book.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable/gradientnav.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable/ic_baseline_info_24.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/drawable/ic_baseline_language_24.xml" value="0.1835" />
         <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/layout/activity_about.xml" value="0.24322916666666666" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/layout/activity_closing.xml" value="0.1" />
         <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/layout/activity_segment_9.xml" value="0.13269927536231885" />
         <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/layout/activity_splash_screen.xml" value="0.18802083333333333" />
         <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/layout/activity_video1.xml" value="0.1" />
         <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/layout/activity_video10.xml" value="0.24322916666666666" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/vid2/drawable/ic_baseline_bookmark_24.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/vid2/drawable/ic_baseline_bookmarks_24.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/vid2/drawable/ic_baseline_history_24.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/vid2/drawable/ic_baseline_text_snippet_24.xml" value="0.1835" />
+        <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/vid2/drawable/ic_round_play_arrow_24.xml" value="0.1835" />
         <entry key="..\:/Project/Android/Sport-Massage-App/app/src/main/res/xml/network_security_config.xml" value="0.175" />
       </map>
     </option>

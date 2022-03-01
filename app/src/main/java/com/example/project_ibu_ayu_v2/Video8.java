@@ -15,7 +15,8 @@ public class Video8 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video8);
         VideoView videoView = findViewById(R.id.vid);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.stroking);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.stroking);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/stroking.mp4?alt=media&token=9dac778d-63a1-41a4-9c99-885e50dbdeba");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

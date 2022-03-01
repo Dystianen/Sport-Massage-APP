@@ -16,7 +16,8 @@ public class PahaBelakang extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_5);
         VideoView videoView = findViewById(R.id.segment);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.pahabelakang);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.pahabelakang);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/pahabelakang.mp4?alt=media&token=e064bfa6-483f-477e-b8a2-001bea5ea8d8");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

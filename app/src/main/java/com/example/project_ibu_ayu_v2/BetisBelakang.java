@@ -16,7 +16,7 @@ public class BetisBelakang extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_6);
         VideoView videoView = findViewById(R.id.segment);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.betisbelakang);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/betisbelakang.mp4?alt=media&token=ed4dfa17-ae1b-42b6-b447-5802ca4a79d7");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

@@ -16,7 +16,8 @@ public class Video1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video1);
         VideoView videoView = findViewById(R.id.vid);
-        String videoPath = "android.resource://"+getPackageName()+"/"+R.raw.petrisage;
+//        String videoPath = "android.resource://"+getPackageName()+"/"+R.raw.petrisage;
+        String videoPath = "https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/petrisage.mp4?alt=media&token=4dcc2c7a-19fb-48a0-9a07-c980a38f50ea";
         Uri uri = Uri.parse(videoPath);
         videoView.setVideoURI(uri);
         MediaController mediaController = new MediaController(this);

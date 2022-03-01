@@ -16,7 +16,8 @@ public class Leher extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_1);
         VideoView videoView = findViewById(R.id.segment);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.leher);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.leher);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/leher.mp4?alt=media&token=b4f48bec-5840-4b2c-894c-815cccab06a1");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

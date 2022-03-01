@@ -15,7 +15,8 @@ public class Video4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video4);
         VideoView videoView = findViewById(R.id.vid);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.tapotement);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.tapotement);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/tapotement.mp4?alt=media&token=47a5068d-4e40-4a4d-8518-37c3382e5a5d");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

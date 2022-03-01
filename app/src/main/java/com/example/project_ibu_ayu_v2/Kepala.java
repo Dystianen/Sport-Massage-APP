@@ -16,7 +16,8 @@ public class Kepala extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_2);
         VideoView videoView = findViewById(R.id.segment);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.kepala);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.kepala);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/kepala.mp4?alt=media&token=2bec2fcd-b271-4661-a428-671b7cf8f2ae");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

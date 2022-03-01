@@ -15,7 +15,8 @@ public class Video7 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video7);
         VideoView videoView = findViewById(R.id.vid);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.skinrolling);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.skinrolling);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/skinrolling.mp4?alt=media&token=01d7c90c-3108-4400-b9a2-3bce2133db66");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

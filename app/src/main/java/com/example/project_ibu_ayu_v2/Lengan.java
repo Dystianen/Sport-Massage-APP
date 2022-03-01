@@ -16,7 +16,8 @@ public class Lengan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_2);
         VideoView videoView = findViewById(R.id.segment);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.lengantangan);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.lengantangan);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/lengantangan.mp4?alt=media&token=ced92f6b-cdf0-463e-9c96-5a1efe3cd0e5");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

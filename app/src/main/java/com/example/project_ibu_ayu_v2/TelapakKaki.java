@@ -16,7 +16,8 @@ public class TelapakKaki extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_7);
         VideoView videoView = findViewById(R.id.segment);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.telapak);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.telapak);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/telapak.mp4?alt=media&token=141a6c4c-0abb-4e65-aa5d-196be82a8067");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

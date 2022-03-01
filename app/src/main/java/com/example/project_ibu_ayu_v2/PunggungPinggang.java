@@ -16,7 +16,8 @@ public class PunggungPinggang extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_3);
         VideoView videoView = findViewById(R.id.segment);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.pinggang);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.pinggang);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/pinggang.mp4?alt=media&token=2fa24a64-7998-48ee-a777-6ea4145006cf");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

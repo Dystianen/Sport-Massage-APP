@@ -16,7 +16,8 @@ public class BetisDepan extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_2);
         VideoView videoView = findViewById(R.id.segment);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.betisdepan);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.betisdepan);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/betisdepan.mp4?alt=media&token=a5287ea2-ef84-4528-96f1-6a77f446d583");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

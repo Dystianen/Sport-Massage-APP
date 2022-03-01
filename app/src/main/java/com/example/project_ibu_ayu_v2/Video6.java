@@ -15,7 +15,8 @@ public class Video6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video6);
         VideoView videoView = findViewById(R.id.vid);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.friction);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.friction);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/friction.mp4?alt=media&token=f21e8d19-275f-45fe-aed6-3d9ed9df20df");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

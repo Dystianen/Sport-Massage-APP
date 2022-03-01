@@ -16,7 +16,8 @@ public class Bahu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_2);
         VideoView videoView = findViewById(R.id.segment);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.shoulder);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.shoulder);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/shoulder.mp4?alt=media&token=f0da0d77-eb42-4e2c-a747-f6e888f14e44");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

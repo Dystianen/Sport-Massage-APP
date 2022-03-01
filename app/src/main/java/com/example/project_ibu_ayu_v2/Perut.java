@@ -16,7 +16,8 @@ public class Perut extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_2);
         VideoView videoView = findViewById(R.id.segment);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.perut);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.perut);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/perut.mp4?alt=media&token=0ca90f43-5789-4248-b65e-accff2189b21");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

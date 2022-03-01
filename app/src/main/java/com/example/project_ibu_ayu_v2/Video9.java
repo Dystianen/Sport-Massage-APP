@@ -15,7 +15,8 @@ public class Video9 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video9);
         VideoView videoView = findViewById(R.id.vid);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.walken);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.walken);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/walken.mp4?alt=media&token=acaa2917-ca58-4b38-8a50-4b8c1e995d7a");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

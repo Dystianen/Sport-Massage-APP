@@ -15,7 +15,8 @@ public class Video3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_video3);
         VideoView videoView = findViewById(R.id.vid);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.effluerage);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.effluerage);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/effluerage.mp4?alt=media&token=14ac26db-6aea-4b0c-bd1c-6e4385a1bdb7");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);

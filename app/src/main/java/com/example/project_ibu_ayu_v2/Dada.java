@@ -16,7 +16,8 @@ public class Dada extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_segment_2);
         VideoView videoView = findViewById(R.id.segment);
-        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.dada);
+//        videoView.setVideoPath("android.resource://"+getPackageName()+"/"+R.raw.dada);
+        videoView.setVideoPath("https://firebasestorage.googleapis.com/v0/b/sportmassageapp.appspot.com/o/dada.mp4?alt=media&token=88ca6517-dd71-4953-91ae-d08697fec868");
         MediaController mediaController = new MediaController(this);
         mediaController.setAnchorView(videoView);
         videoView.setMediaController(mediaController);
